@@ -3,9 +3,9 @@
 ![Status](https://img.shields.io/badge/status-in%20progress-yellow)
 ![Language](https://img.shields.io/badge/language-R%20%7C%20Stan-blue)
 
-Implementation of Dynamic Shrinkage Process (DSP) priors from Kowal (2019) in Stan.
-
 ---
+
+Implementation of Dynamic Shrinkage Process (DSP) priors from Kowal (2019) in Stan.
 
 ## Overview
 
