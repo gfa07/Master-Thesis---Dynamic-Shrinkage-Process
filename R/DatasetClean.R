@@ -1,4 +1,4 @@
-setwd("C:/Users/gonca/Documents/Uni/4th semester/Dataset")
+
 
 ff5 = read.csv("FF_Factors_5_2007_2017.csv")
 mom = read.csv("FF_Momentum_2007_2017.csv")
