@@ -4,5 +4,6 @@ Master’s thesis focused on implementing Dynamic Shrinkage Process (DSP) priors
 
 ## Structure
 - stan/ → Stan models
-- scripts/ → R code
+- R/ → R code
 - data/ → datasets
+- docs/ → figures and supplementary notes
