@@ -85,14 +85,22 @@ finalDataSet = cbind(yManufStd, yHlthStd, XStd)
 
 prettycol = c("#6C8EBF", "#c0a34d", "#780000","#007878","#B5C6DF","#EADAAA","#AE6666",
               "#9E4F4F", "#2F4858", "#7A6C5D","#3A7D7D")
+
 origdatset = read.csv("F-F_Research_Data_Factors_weekly_2007_2017.csv") 
 
-par(mfrow = c(3,1))
-plot(predictors[,"Mkt.RF"]*100, type = 'l', xlab='TimeStep', ylab = expression(R[M] - R[F]), col = prettycol[1], lwd=1)
+cairo_pdf("factors_plot.pdf", width = 7, height = 9)
+
+par(mfrow = c(3,1), mar = c(4.5, 5, 2, 1), mgp = c(2.5, 1, 0), oma = c(0, 0, 2, 0))
+
+plot(predictors[,"Mkt.RF"]*100, type = 'l', xlab='TimeStep', ylab = expression(R[M] - R[F]), col = prettycol[1], lwd=1, cex.lab = 1.3, cex.axis = 1.1)
 lines(origdatset$Mkt.RF, col = prettycol[2], lwd=1)
 
-plot(predictors[,"SMB"]*100, type = 'l', xlab='TimeStep', ylab = 'SMB', col = prettycol[1], lwd=1)
+plot(predictors[,"SMB"]*100, type = 'l', xlab='TimeStep', ylab = 'SMB', col = prettycol[1], lwd=1, cex.lab = 1.3, cex.axis = 1.1)
 lines(origdatset$SMB, col = prettycol[2], lwd=1)
 
-plot(predictors[,"HML"]*100, type = 'l', xlab='TimeStep', ylab = 'HML', col = prettycol[1], lwd=1)
+plot(predictors[,"HML"]*100, type = 'l', xlab='TimeStep', ylab = 'HML', col = prettycol[1], lwd=1, cex.lab = 1.3, cex.axis = 1.1)
 lines(origdatset$HML, col = prettycol[2], lwd=1)
+
+dev.off()
+
+
