@@ -20,10 +20,15 @@ for(j in row){
 
 yMax <- max(abs(betas))
 
-plot( betas[1,], type = "l", lwd = 2, xlab = "TimeStep", ylab = expression(beta[t])
-      , col = prettycol[1], ylim=c(-yMax, yMax))
+cairo_pdf("SimulatedBetas.pdf", width = 7, height = 4.5)
 
-lines(betas[2,], type = "l", lwd = 2, col = prettycol[2])
+par(mar = c(4.5, 5, 2, 1), mgp = c(2.5, 1, 0))
 
-legend('topright', legend = paste0('Variance = ', sdts^2), col = prettycol[1:2], lwd = 2)
+plot( betas[1,], type = "l", lwd = 1, xlab = "TimeStep", ylab = expression(beta[t])
+      , col = prettycol[1], ylim=c(-yMax, yMax), cex.lab = 1.3, cex.axis = 1.1)
 
+lines(betas[2,], type = "l", lwd = 1, col = prettycol[2])
+
+legend('topright', legend = paste0('Variance = ', sdts^2), col = prettycol[1:2], lwd = 1)
+
+dev.off()
