@@ -20,16 +20,19 @@ scaledInvChiC = scaledInvChi(x=sigma, nu = 0.00001, sigma = 0.00001)
 
 scaledInvChiCDens = scaledInvChiC / (sum(scaledInvChiC)*distanceSigmaGrid)
 
+cairo_pdf("CompJeffreyChi.pdf", width = 7, height = 4.5)
 
-plot(sigma, scaledInvChiCDens, type = 'l', lwd = 2,
+par(mar = c(4.5, 5, 2, 1), mgp = c(2.5, 1, 0))
+
+plot(sigma, scaledInvChiCDens, type = 'l', lwd = 3,
      xlab = expression(sigma[epsilon]),
      ylab = "Density",
-     main = expression("Jeffreys vs Scaled Inv-" * chi^2),
-     col = prettycol[1], ylim = c(0, 50))
+     main = "",
+     col = prettycol[1], ylim = c(0, 50), cex.lab = 1.3,
+     cex.axis = 1.1)
 
-lines(sigma, jeffDens, lwd = 2, col = prettycol[2], lty = 2)
+lines(sigma, jeffDens, lwd = 3, col = prettycol[3], lty = 2)
 
-legend(x = 'topright', legend =c('Jeffreys', expression("Scaled Inv-" * chi^2)), lwd = c(2,2), 
-       lty = c(1,2), col = c(prettycol[2], prettycol[1]))
-
-       
+legend(x = 'topright', legend =c('Jeffreys', expression("Scaled Inv-" * chi^2)), lwd = c(3,3), 
+       lty = c(1,2), col = c(prettycol[3], prettycol[1]))
+dev.off()
