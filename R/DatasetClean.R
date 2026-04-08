@@ -78,8 +78,12 @@ yHlthStd = standardize(yHlth)
 sd(yHlthStd)
 #Note that data isn't in percentage anymore! But with standardization that doesn't matter because that would cancel out! 
 
-finalDataSet = cbind(yManufStd, yHlthStd, XStd)
-#write.csv(finalDataSet, file = "FinalDataset.csv")
+finalDataSetStd = cbind(yManufStd, yHlthStd, XStd)
+#write.csv(finalDataSetStd, file = "FinalDataset.csv")
+
+finalDataSet = cbind(yManuf, yHlth, Intercept = 1, predictors)
+#write.csv(finalDataSetStd, file = "FinalDataset.csv")
+
 
 
 
