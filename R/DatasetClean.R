@@ -82,7 +82,7 @@ finalDataSetStd = cbind(yManufStd, yHlthStd, XStd)
 #write.csv(finalDataSetStd, file = "FinalDataset.csv")
 
 finalDataSet = cbind(yManuf, yHlth, Intercept = 1, predictors)
-#write.csv(finalDataSetStd, file = "FinalDataset.csv")
+#write.csv(finalDataSet, file = "FinalDataset.csv")
 
 
 
