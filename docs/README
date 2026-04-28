@@ -1,0 +1,5 @@
+Section: Selecting the Stan model -> plotsSimParamStan
+Section: Selecting the Gibbs sampling model -> plotsSimParamDSP
+Section: Comparison between Stan model and DSP model
+    1. Synthetic data -> plotsSimParamStanDSPComparison
+    2. Real-world data -> plotsRealParamStanDSPComparison
