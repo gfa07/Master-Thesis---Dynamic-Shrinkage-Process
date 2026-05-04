@@ -31,6 +31,6 @@ This repository investigates the feasibility and implementation of DSP priors wi
 
 ## Reference
 
-Kowal, D. R. (2019). *Dynamic shrinkage processes*. Journal of the American Statistical Association.
+Daniel R. Kowal, David S. Matteson, & David Ruppert (2019). Dynamic shrinkage processes. Journal of the Royal Statistical Society: Series B, 81(4), 781–804. https://doi.org/10.1111/rssb.12325
 
 ---
