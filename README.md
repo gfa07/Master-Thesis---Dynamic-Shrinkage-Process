@@ -15,10 +15,12 @@ This repository investigates the feasibility and implementation of DSP priors wi
 
 ## Repository Structure
 
-* `stan/` — Stan model implementations of DSP priors
-* `R/` — R scripts for data generation, model fitting, and analysis
-* `data/` — datasets (simulated or empirical)
-* `docs/` — supplementary materials and notes
+- `stan/` — Stan model implementations of DSP priors, plus the R scripts specific to running them
+- `R/` — R scripts for data generation, model fitting, and analysis
+- `data/` — datasets (simulated or empirical)
+- `docs/` — supplementary materials and notes, mainly plots
+- `DSP/` — the modified `dspPerfected` package (forked from the original `dsp`), plus the R scripts used to build and fit the DSP models for the synthetic data
+- `CompStanDSP/` — comparison scripts between the Stan and DSP implementations
 
 ---
 
