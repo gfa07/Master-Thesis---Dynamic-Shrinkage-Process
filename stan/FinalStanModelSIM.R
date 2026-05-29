@@ -49,7 +49,7 @@ fit = model$sample(data = stanData,
                      iter_warmup = burnin,
                      iter_sampling = niter - burnin,
                      seed = 123 ,
-                     adapt_delta = delta,
+                     adapt_delta = delta, #The deltas are: (0.8, 0.9, 0.95, 0.995, 0.999999)
                      max_treedepth = 15)
 
   
