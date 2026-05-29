@@ -35,6 +35,7 @@ for (t in 1:T){
 
 
 #######Trade-OFF- Delta / Time########
+#You will need to generate this models! But there is a fil in this dic that will provide the code for that!
 fittedM0.8 = readRDS("stan/fitCmdstanr0.8w1chains.rds")
 fittedM0.9 = readRDS("stan/fitCmdstanr0.9w1chains.rds")
 fittedM0.95 = readRDS("stan/fitCmdstanr0.95w1chains.rds")
