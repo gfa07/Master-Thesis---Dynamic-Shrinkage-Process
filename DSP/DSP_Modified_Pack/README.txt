@@ -1,0 +1,3 @@
+This package, dspPerfected, is a modified version of the dsp package developed by Daniel R. Kowal, Haoxuan Wu, Toryn Schafer, Jason B. Cho, and David S. Matteson. It was adapted as part of my master's thesis. All credit for the original methods and implementation belongs to the original authors; this version modifies the model to use a stable, fixed offset in place of the adaptive offset used in the original implementation.
+The underlying methods are described in Kowal et al. (2019), Wu et al. (2024), Schafer and Matteson (2024), and Cho and Matteson (2024).
+This package is distributed under the GPL (≥ 3) license, consistent with the original.
