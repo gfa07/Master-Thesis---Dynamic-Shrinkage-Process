@@ -1,6 +1,6 @@
 # Dynamic Shrinkage Process in Stan
 
-![Status](https://img.shields.io/badge/status-in%20progress-yellow)
+![status](https://img.shields.io/badge/status-done-brightgreen)
 ![Language](https://img.shields.io/badge/language-R%20%7C%20Stan-blue)
 
 ---
